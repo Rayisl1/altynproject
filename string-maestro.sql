@@ -1,0 +1,1 @@
+select first_name, last_name, substr(email, instr(email, '@')+1) as email_domain from students
