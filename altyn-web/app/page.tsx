@@ -43,7 +43,7 @@ export default function Home() {
     setMessage(null);
     setLoading(true);
     const supabase = createClient();
-    const { data, error: err } = await supabase.auth.signInWithPassword({
+    const { error: err } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
